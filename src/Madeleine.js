@@ -553,25 +553,25 @@
         iconGrid.style.cssText += "height:50px;width:"+this.__width+"px;top:0;overflow:hidden;";
         iconGrid.className += "box";
 
-        var logo = document.createElement("div");
+        //var logo = document.createElement("div");
         var info = document.createElement("div");
         var view = document.createElement("div");
-        var capture = document.createElement("div");
+        //var capture = document.createElement("div");
         //var download = document.createElement("div");
-        var fullscreen = document.createElement("div");
+        //var fullscreen = document.createElement("div");
 
         info.id = "model-info-" + this.__uniqueID;
         info.className += "model-info noselect";
         info.innerHTML = this.__info.name;
 
-        logo.className += "clickable pull-left madeleine-logo";
-        view.className += "clickable pull-right icon-mad-view";
-        capture.className += "clickable pull-right icon-mad-capture";
+        //logo.className += "clickable pull-left madeleine-logo";
+        //view.className += "clickable pull-right icon-mad-view";
+        //capture.className += "clickable pull-right icon-mad-capture";
         //download.className += "clickable pull-right icon-mad-download";
-        fullscreen.className += "clickable pull-right icon-mad-screen-full";
+        //fullscreen.className += "clickable pull-right icon-mad-screen-full";
 
-        Lily.bind(view, "click", this.viewModeHandler);
-        Lily.bind(capture, "click", this.captureHandler);
+        //Lily.bind(view, "click", this.viewModeHandler);
+        //Lily.bind(capture, "click", this.captureHandler);
 
         var rotator = document.createElement("div");
         var faster = document.createElement("div");
@@ -597,11 +597,11 @@
         var down = document.createElement("div");
         var up = document.createElement("div");
         
-        iconGrid.appendChild(fullscreen);
+        //iconGrid.appendChild(fullscreen);
         //iconGrid.appendChild(download);
-        iconGrid.appendChild(capture);
-        iconGrid.appendChild(view);
-        iconGrid.appendChild(logo);
+        //iconGrid.appendChild(capture);
+        //iconGrid.appendChild(view);
+        //iconGrid.appendChild(logo);
         iconGrid.appendChild(info);
         iconGrid.appendChild(rotator);
 
