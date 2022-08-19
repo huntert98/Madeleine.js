@@ -830,7 +830,7 @@
 
     // Start animation
     Madeleine.prototype.startAnimation = function() {
-      if (this.__rotatable) this.__rotating = true;
+      //if (this.__rotatable) this.__rotating = true;
       this.interact(this);
     };
 
@@ -842,7 +842,7 @@
     // Start rotating object
     Madeleine.prototype.startRotation = function() {
       this.options.rotateSensitivity = 0.005;
-      this.__rotating = true;
+      //this.__rotating = true;
     };
 
     // Stop rotating object
@@ -859,7 +859,7 @@
 
     // Perform actual rendering object
     Madeleine.prototype.render = function() {
-      this.__rotating && this.rotateObjectZ(-1);
+      //this.__rotating && this.rotateObjectZ(-1);
       this.__renderer.render(this.__scene, this.__camera);
     };
     
@@ -983,7 +983,7 @@
     Madeleine.prototype.disableFirstPersonViewerMode = function() {
       this.enableUserInteraction();
       this.__firstPerson = false;
-      this.__rotating = true;
+      //this.__rotating = true;
       this.__zoomable = true;
       this.__movable = true;
     }; 
